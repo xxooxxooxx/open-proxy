@@ -71,6 +71,7 @@ cd ..
 
 ## configure
 server_ip=$(ifconfig | grep "inet addr" | sed -n 1p | cut -d':' -f2 | cut -d' ' -f1)
+#server_ip="nogfw.ml"
 for site in $targets; do
 	sed -i "s/local_server_ip/$server_ip/g" sites/$site
 	sed -i "/## sites/a\\\\tinclude $site;" common/nginx.conf
