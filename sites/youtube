@@ -36,7 +36,7 @@ server {
     }
 
     location @deny_mobile {
-        rewrite ^(.*) http://45.32.138.145:9999/mobile;
+		rewrite ^(.*) http://local_server_ip:9999/mobile;
 	}
 }
 
