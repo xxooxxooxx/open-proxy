@@ -19,6 +19,7 @@ server {
 		sub_filter i.epochtimes.com local_server_ip;
 		sub_filter www.epochtimes.com local_server_ip;
 		sub_filter tuidang.epochtimes.com local_server_ip:82;
+		sub_filter www.ntdtv.com local_server_ip:8000;
 		sub_filter imgs.ntdtv.com local_server_ip:8001;
 		sub_filter media5.ntdtv.com local_server_ip:8002;
 		sub_filter inew3.ntdtv.com local_server_ip:8003;
