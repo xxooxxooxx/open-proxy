@@ -43,8 +43,10 @@ server {
 
 	location / {
 		proxy_pass http://radio.soundofhope.org:8880;
-		proxy_set_header Host radio.soundofhope.org;
-		proxy_set_header Referer http://radio.soundofhope.org:8880;
+	}
+
+	location /soh-live-8k.mp3 {
+		proxy_pass http://radio.soundofhope.org:8880/soh-live-8k;
 	}
 }
 
