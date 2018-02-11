@@ -1,6 +1,7 @@
 
 server {
 	listen	8888;
+	resolver 8.8.8.8;
 
 	location / {
 		proxy_pass https://www.google.com;
